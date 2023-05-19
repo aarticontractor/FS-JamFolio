@@ -1,0 +1,16 @@
+<div class="container-fluid py-5">
+<div class="row">
+  {{#each musicians}}
+  <div class="col-md-4">
+    <div class="card my-3">
+      <img src={{profile_url}} class="card-img-top rounded-circle mx-auto d-block" alt="{{this.first_name}}" style="width: 50%; height: auto; padding: 10px;">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/musician/{{this.id}}">{{this.first_name}} {{this.last_name}}</a></h5>
+        <p class="card-text">Description: {{this.description}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>
+</div>
